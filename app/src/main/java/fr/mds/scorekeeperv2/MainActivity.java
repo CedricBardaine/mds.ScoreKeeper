@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             //Set the score text views
             mScoreText1.setText(String.valueOf(this.mScore1));
             mScoreText2.setText(String.valueOf(this.mScore2));
+            this.updateTeamTextColor();
         }
     }
 
@@ -144,7 +145,10 @@ public class MainActivity extends AppCompatActivity {
                 mScoreText2.setText(String.valueOf(mScore2));
                 break;
         }
+        updateTeamTextColor();
     }
+
+
 
     public void increaseScore(View view) {
         int viewID = view.getId();
@@ -159,8 +163,31 @@ public class MainActivity extends AppCompatActivity {
                 mScoreText2.setText(String.valueOf(mScore2));
                 break;
         }
+        updateTeamTextColor();
     }
 
+    private void updateTeamTextColor() {
+        final int colorFirst = getResources().getColor(R.color.colorPrimary);
+        final int colorSecond ;
+
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
+            colorSecond = getResources().getColor(R.color.colorWhiteNormal);
+        else
+            colorSecond = getResources().getColor(R.color.colorBlackNormal);
+
+        if ( this.mScore1 > this.mScore2) {
+            this.mScoreText1.setTextColor( colorFirst );
+            this.mScoreText2.setTextColor( colorSecond );
+        }
+        else if ( this.mScore2 > this.mScore1) {
+            this.mScoreText2.setTextColor(colorFirst);
+            this.mScoreText1.setTextColor( colorSecond );
+        }
+        else {
+            this.mScoreText1.setTextColor(colorSecond);
+            this.mScoreText2.setTextColor(colorSecond);
+        }
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle out) {
