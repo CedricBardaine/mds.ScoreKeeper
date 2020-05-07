@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "405340304519",
+    "firebase_url": "https://mds-scorekeeper.firebaseio.com",
+    "project_id": "mds-scorekeeper",
+    "storage_bucket": "mds-scorekeeper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405340304519:android:ea6c495db5264ed3def422",
+        "android_client_info": {
+          "package_name": "fr.mds.scorekeeperv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405340304519-rl13uhhp6i9ktb1dg0ivr3dp8pitfjk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArBvvbq3Z8seDwKu7aoW5g4P15bSxnBXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405340304519-rl13uhhp6i9ktb1dg0ivr3dp8pitfjk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
