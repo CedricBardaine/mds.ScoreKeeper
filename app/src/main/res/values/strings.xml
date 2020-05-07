@@ -5,4 +5,7 @@
     <string name="initial_count">0</string>
     <string name="minus_button_description">decrease score</string>
     <string name="team_2">Team 2</string>
+
+    <string name="day_mode">Day mode</string>
+    <string name="night_mode">Help my eyes</string>
 </resources>
